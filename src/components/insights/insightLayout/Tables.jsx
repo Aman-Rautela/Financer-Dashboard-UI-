@@ -29,8 +29,7 @@ export default function Tables({ theme }) {
 
   return (
     <main className="flex flex-col md:flex-row gap-4">
-      {/* Category Distribution */}
-      <div className={`w-full md:w-1/2 p-5 flex flex-col gap-4 ${cardClass}`}>
+       <div className={`w-full md:w-1/2 p-5 flex flex-col gap-4 ${cardClass}`}>
         <span className={`font-bold text-base ${theme === "dark" ? "text-neutral-200" : "text-slate-700"}`}>
           Category Distribution
         </span>
@@ -60,8 +59,7 @@ export default function Tables({ theme }) {
         </div>
       </div>
 
-      {/* Largest Transactions */}
-      <div className={`w-full md:w-1/2 flex flex-col ${cardClass}`}>
+       <div className={`w-full md:w-1/2 flex flex-col ${cardClass}`}>
         <span className={`font-bold text-base px-6 py-5 border-b
           ${theme === "dark" ? "text-neutral-200 border-gray-800" : "text-slate-700 border-slate-200"}`}>
           Largest Transactions

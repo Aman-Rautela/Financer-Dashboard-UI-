@@ -59,7 +59,6 @@ function App() {
         onMenuClick={() => setSidebarOpen(!sidebarOpen)}
       />
 
-      {/* Mobile overlay */}
       {sidebarOpen && (
         <div
           className="fixed inset-0 z-20 bg-black/50 md:hidden"
@@ -69,7 +68,6 @@ function App() {
 
       <div className="flex h-[calc(100vh-4rem)] mt-16 p-2 md:p-4 gap-0 overflow-hidden">
 
-        {/* Sidebar */}
         <div className={`fixed md:relative z-20 transition-transform duration-300 md:translate-x-0
           h-[calc(100vh-5rem)] shrink-0
           ${sidebarOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"}`}>
@@ -84,7 +82,6 @@ function App() {
           />
         </div>
 
-        {/* Main content */}
         <section className="flex-1 h-full overflow-y-auto min-w-0">
           {activePage === "Dashboard" && <DashboardPage selected={selected} theme={theme} />}
           {activePage === "Transactions" && <TransactionsPage selected={selected} theme={theme} />}

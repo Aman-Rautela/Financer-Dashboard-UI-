@@ -10,8 +10,7 @@ export default function Navbar({ data, selected, onSelect, theme, onTheme, activ
       <ul className="flex justify-between items-center">
         <li>
           <div className="flex items-center gap-2 md:gap-2.5">
-            {/* Hamburger — mobile only */}
-            <button
+             <button
               className={`md:hidden p-1.5 rounded-md cursor-pointer border-none outline-none transition-colors duration-200
                 ${theme === "dark" ? "text-neutral-400 hover:text-emerald-400" : "text-slate-500 hover:text-emerald-600"}`}
               onClick={onMenuClick}
@@ -27,8 +26,7 @@ export default function Navbar({ data, selected, onSelect, theme, onTheme, activ
           </div>
         </li>
 
-        {/* Hidden on mobile */}
-        <li className={`hidden md:block text-lg font-semibold ${theme === "dark" ? "text-neutral-300" : "text-slate-600"}`}>
+         <li className={`hidden md:block text-lg font-semibold ${theme === "dark" ? "text-neutral-300" : "text-slate-600"}`}>
           {activePage}
         </li>
 
@@ -50,7 +48,6 @@ export default function Navbar({ data, selected, onSelect, theme, onTheme, activ
               </select>
             </li>
 
-            {/* Hidden on mobile */}
             <li className={`hidden md:flex items-center gap-1.5 w-28 text-sm ${theme === "dark" ? "text-neutral-400" : "text-slate-500"}`}>
               <span className="flex w-5 justify-center">
                 {selected.access === "Full Access" ? <Shield size={14} /> : <Eye size={14} />}
