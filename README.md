@@ -6,7 +6,7 @@ A clean, interactive personal finance dashboard built with React and Tailwind CS
 
 ## Setup
 ```bash
-git clone https://github.com/your-username/financer.git
+git clone https://github.com/Aman-Rautela/Financer-Dashboard-UI-
 cd financer
 npm install
 npm run dev
